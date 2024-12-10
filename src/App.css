@@ -1,0 +1,83 @@
+/* Weather Card Wrapper */
+.weather-card-wrapper {
+  position: relative;
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 8px;
+  overflow: hidden; /* Ensures the background is clipped to the border radius */
+}
+
+.weather-card-wrapper .card {
+  max-width: 400px; /* Limit the size of the card for better readability */
+  margin: auto;
+  text-align: center;
+}
+
+.weather-card-wrapper h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.weather-card-wrapper p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+  .weather-card-wrapper {
+    height: 200px;
+  }
+
+  .weather-card-wrapper .card {
+    max-width: 90%;
+  }
+}
+
+/* Add spacing below the navbar */
+.navbar {
+  margin-bottom: 20px; /* Adjust this value to your preference */
+}
+
+/* General Container Styling */
+.container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: white !important; /* Ensure links are always visible */
+}
+
+/* Add spacing between the input and the button in the search form */
+.search-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Adds spacing between input and button */
+  margin-bottom: 20px; /* Optional: spacing below the form */
+}
+
+.search-form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.search-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
